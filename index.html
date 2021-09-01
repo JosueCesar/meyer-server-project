@@ -1,6 +1,9 @@
 <html>
 	<head>
 		<style>
+			* {
+				font-family: sans-serif;
+			}
 			body {
 				background-color: #2d3436;
 				box-sizing: border-box;
@@ -27,7 +30,6 @@
 				width: 200px;
 				text-align: center;
 				text-decoration: none;
-				font-family: sans-serif;
 				font-weight: 600;
 				font-size: 24px;
 				color: #fff;
@@ -43,10 +45,20 @@
 				opacity: 0.5;
 				cursor: pointer;
 			}
+			p#server-type {
+				position: absolute;
+				top: 20px;
+				font-weight: 600;
+				background-color: yellow;
+				padding: 6px 10px;
+				border-radius: 5px;
+			}
 		</style>
 	</head>
 	<body>
-		<div id="image_container"> 
+		<div id="image_container">
+			<p id="server-type">Apache</p>
+
 			<img id="image" alt="Logo da Compasso UOL" src="/imagens/logo_compasso.png" />
 
 			<a id="link" href="infos_php.php">Sobre o PHP</a>
