@@ -5,6 +5,7 @@
 				background-color: #2d3436;
 				box-sizing: border-box;
 				height: calc(100vh - 100px);
+				font-family: sans-serif;
 
 				display: flex;
 				
@@ -26,7 +27,6 @@
 			a#link {
 				width: 200px;
 				text-decoration: none;
-				font-family: sans-serif;
 				font-weight: 600;
 				font-size: 24px;
 				color: #fff;
@@ -43,10 +43,19 @@
 				opacity: 0.5;
 				cursor: pointer;
 			}
+			p#server-type {
+				position: absolute;
+				top: 20px;
+				font-weight: 600;
+				background-color: yellow;
+				padding: 6px 10px;
+				border-radius: 5px;
+			}
 		</style>
 	</head>
 	<body>
-		<div id="image_container"> 
+		<div id="image_container">
+			<p id="server-type">NGINX</p>
 			<img id="image" alt="Logo da Compasso UOL" src="/imagens/logo_compasso.png" />
 
 			<a id="link" href="http://localhost:8070">Acessar</a>
